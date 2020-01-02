@@ -1,0 +1,19 @@
+# source data
+Posts/
+Posts_all/
+Profiles/
+
+Text_20genres/model/GoogleNews-vectors-negative300.bin
+Image_20genres/IGimg/
+Image_20genres/Poster/
+Video/Trailers/
+Video/SpliTrailers/
+MRM/vector/IGimgFeatureVec.csv
+**/*.h5
+**/*.jpg
+**/*.jpeg
+**/*.avi
+**/*.mp4
+
+# jupyter notebook
+**/.ipynb_checkpoints/
