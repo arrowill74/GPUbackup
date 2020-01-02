@@ -3,13 +3,16 @@ Posts/
 Posts_all/
 Profiles/
 
-Text_20genres/model/GoogleNews-vectors-negative300.bin
 Image_20genres/IGimg/
 Image_20genres/Poster/
 Video/Trailers/
 Video/SpliTrailers/
+
+# Large files
 Image_20genres/Sample/output/IGimgFeatureVec.csv
 MRM/vector/IGimgFeatureVec.csv
+Text_20genres/model/GoogleNews-vectors-negative300.bin
+
 **/*.h5
 **/*.jpg
 **/*.jpeg
