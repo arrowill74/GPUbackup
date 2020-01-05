@@ -1,98 +1,98 @@
 username,acc,truth,top_n,Action,Adventure,Animation,Biography,Comedy,Crime,Documentary,Drama,Family,Fantasy,History,Horror,Music,Mystery,Romance,Sci-Fi,Sport,Thriller,War,Western
-47metersdown,1.0,"['Adventure', 'Drama', 'Horror']","['Drama', 'Horror', 'Adventure']",0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
-adogsjourneymovie,0.6666666666666666,"['Adventure', 'Comedy', 'Drama']","['Drama', 'Comedy', 'Biography']",0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-aftermathmovie,0.3333333333333333,"['Drama', 'Romance', 'War']","['Drama', 'Mystery', 'Thriller']",0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0
+47metersdown,0.6666666666666666,"['Adventure', 'Drama', 'Horror']","['Adventure', 'Drama', 'Comedy']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+adogsjourneymovie,0.6666666666666666,"['Adventure', 'Comedy', 'Drama']","['Comedy', 'Drama', 'Romance']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+aftermathmovie,0.3333333333333333,"['Drama', 'Romance', 'War']","['Drama', 'Comedy', 'Horror']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
 aftermovie,0.0,"['Drama', 'Romance']","['Action', 'Thriller']",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
 alitamovie,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-angelhasfallen,0.0,"['Action', 'Thriller']","['Adventure', 'Drama']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+angelhasfallen,0.5,"['Action', 'Thriller']","['Adventure', 'Action']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 angrybirdsmovie,1.0,"['Adventure', 'Animation', 'Comedy']","['Adventure', 'Comedy', 'Animation']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-annabellemovie,0.3333333333333333,"['Horror', 'Mystery', 'Thriller']","['Drama', 'Thriller', 'Sci-Fi']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0
+annabellemovie,0.3333333333333333,"['Horror', 'Mystery', 'Thriller']","['Adventure', 'Action', 'Horror']",1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 annamovie,1.0,"['Action', 'Thriller']","['Action', 'Thriller']",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-apollo11movie,0.0,"['Documentary', 'History']","['Sci-Fi', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
-arcticmovie,1.0,"['Adventure', 'Drama']","['Drama', 'Adventure']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-artofracingmovie,1.0,"['Comedy', 'Drama', 'Romance']","['Drama', 'Comedy', 'Romance']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+apollo11movie,0.0,"['Documentary', 'History']","['Action', 'Adventure']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+arcticmovie,1.0,"['Adventure', 'Drama']","['Adventure', 'Drama']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+artofracingmovie,0.6666666666666666,"['Comedy', 'Drama', 'Romance']","['Drama', 'Comedy', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 avengers,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 beachbummovie,1.0,['Comedy'],['Comedy'],0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-bernadettefilm,1.0,"['Comedy', 'Drama', 'Mystery']","['Drama', 'Comedy', 'Mystery']",0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
-blindedbythelightmovie,0.6666666666666666,"['Comedy', 'Drama', 'Music']","['Drama', 'Comedy', 'Romance']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+bernadettefilm,0.6666666666666666,"['Comedy', 'Drama', 'Mystery']","['Comedy', 'Drama', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+blindedbythelightmovie,0.3333333333333333,"['Comedy', 'Drama', 'Music']","['Action', 'Drama', 'Adventure']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 booksmart,0.0,['Comedy'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-breakthroughmovie,0.5,"['Biography', 'Drama']","['Drama', 'Adventure']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+breakthroughmovie,0.0,"['Biography', 'Drama']","['Adventure', 'Action']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 brianbanksmovie,1.0,"['Biography', 'Drama', 'Sport']","['Drama', 'Biography', 'Sport']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0
-brightburnmovie,0.5,"['Horror', 'Sci-Fi']","['Horror', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
-brittanyrunsmov,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-captainmarvelofficial,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Drama', 'Action', 'Thriller']",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
-captivestatemovie,0.3333333333333333,"['Drama', 'Sci-Fi', 'Thriller']","['Drama', 'History', 'Biography']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+brightburnmovie,0.5,"['Horror', 'Sci-Fi']","['Horror', 'Thriller']",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+brittanyrunsmov,1.0,"['Comedy', 'Drama']","['Comedy', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+captainmarvelofficial,0.6666666666666666,"['Action', 'Adventure', 'Sci-Fi']","['Adventure', 'Drama', 'Action']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+captivestatemovie,0.3333333333333333,"['Drama', 'Sci-Fi', 'Thriller']","['Drama', 'Comedy', 'Fantasy']",0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
 childsplaymovie,0.0,['Horror'],['Comedy'],0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 clarathefilm,0.0,['Sci-Fi'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-coldpursuitmovie,0.3333333333333333,"['Action', 'Crime', 'Drama']","['Drama', 'Comedy', 'Romance']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
-detectivepikachumovie,0.6666666666666666,"['Action', 'Adventure', 'Comedy']","['Adventure', 'Drama', 'Comedy']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-disneyaladdin,1.0,"['Adventure', 'Family', 'Fantasy']","['Fantasy', 'Adventure', 'Family']",0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
-doramovie,1.0,"['Adventure', 'Family']","['Adventure', 'Family']",0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-dumbo,1.0,"['Adventure', 'Family', 'Fantasy']","['Adventure', 'Fantasy', 'Family']",0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
-escaperoom,1.0,"['Action', 'Adventure', 'Horror']","['Adventure', 'Action', 'Horror']",1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-everybodyknowsmovie,0.3333333333333333,"['Crime', 'Drama', 'Mystery']","['Drama', 'History', 'Thriller']",0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0
+coldpursuitmovie,0.3333333333333333,"['Action', 'Crime', 'Drama']","['Comedy', 'Horror', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+detectivepikachumovie,1.0,"['Action', 'Adventure', 'Comedy']","['Adventure', 'Comedy', 'Action']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+disneyaladdin,0.3333333333333333,"['Adventure', 'Family', 'Fantasy']","['Adventure', 'Comedy', 'Drama']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+doramovie,0.5,"['Adventure', 'Family']","['Adventure', 'Action']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+dumbo,0.3333333333333333,"['Adventure', 'Family', 'Fantasy']","['Adventure', 'Action', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+escaperoom,0.6666666666666666,"['Action', 'Adventure', 'Horror']","['Adventure', 'Action', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+everybodyknowsmovie,0.3333333333333333,"['Crime', 'Drama', 'Mystery']","['Comedy', 'Drama', 'Horror']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
 fastandfuriousmovie,1.0,"['Action', 'Adventure']","['Adventure', 'Action']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-fightingwmyfam,1.0,"['Biography', 'Comedy', 'Drama']","['Drama', 'Comedy', 'Biography']",0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-fivefeetapartfilm,0.5,"['Drama', 'Romance']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-glassmovie,1.0,"['Drama', 'Sci-Fi', 'Thriller']","['Drama', 'Thriller', 'Sci-Fi']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0
-gloriabellmovie,0.6666666666666666,"['Comedy', 'Drama', 'Romance']","['Drama', 'Comedy', 'History']",0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
-godzillamovie,1.0,"['Action', 'Adventure', 'Fantasy']","['Adventure', 'Action', 'Fantasy']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+fightingwmyfam,0.6666666666666666,"['Biography', 'Comedy', 'Drama']","['Drama', 'Adventure', 'Comedy']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+fivefeetapartfilm,0.5,"['Drama', 'Romance']","['Comedy', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+glassmovie,0.3333333333333333,"['Drama', 'Sci-Fi', 'Thriller']","['Comedy', 'Drama', 'Action']",1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+gloriabellmovie,1.0,"['Comedy', 'Drama', 'Romance']","['Drama', 'Comedy', 'Romance']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+godzillamovie,0.6666666666666666,"['Action', 'Adventure', 'Fantasy']","['Adventure', 'Action', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
 goodboysmovie,1.0,"['Adventure', 'Comedy']","['Comedy', 'Adventure']",0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-gretafilm,0.3333333333333333,"['Drama', 'Mystery', 'Thriller']","['Drama', 'Action', 'History']",1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
-happydeathdaymovie,0.0,"['Comedy', 'Horror', 'Mystery']","['Action', 'Drama', 'Crime']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-hellboymovie,1.0,"['Action', 'Adventure', 'Fantasy']","['Action', 'Adventure', 'Fantasy']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-hersmellmovie,0.0,"['Drama', 'Music']","['Adventure', 'Action']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-highlifemovie,0.3333333333333333,"['Adventure', 'Drama', 'Mystery']","['Drama', 'Action', 'Thriller']",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
-hotelmumbaifilm,0.6666666666666666,"['Drama', 'History', 'Thriller']","['Drama', 'Thriller', 'Sci-Fi']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0
-httydragon,1.0,"['Action', 'Adventure', 'Animation']","['Adventure', 'Action', 'Animation']",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-hustlemovie,0.5,"['Comedy', 'Crime']","['Comedy', 'Romance']",0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+gretafilm,0.3333333333333333,"['Drama', 'Mystery', 'Thriller']","['Drama', 'Adventure', 'Action']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+happydeathdaymovie,0.0,"['Comedy', 'Horror', 'Mystery']","['Action', 'Crime', 'Thriller']",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+hellboymovie,0.6666666666666666,"['Action', 'Adventure', 'Fantasy']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+hersmellmovie,0.5,"['Drama', 'Music']","['Adventure', 'Drama']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+highlifemovie,0.6666666666666666,"['Adventure', 'Drama', 'Mystery']","['Drama', 'Action', 'Adventure']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+hotelmumbaifilm,0.6666666666666666,"['Drama', 'History', 'Thriller']","['Drama', 'Thriller', 'Horror']",0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0
+httydragon,0.6666666666666666,"['Action', 'Adventure', 'Animation']","['Adventure', 'Action', 'Drama']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+hustlemovie,0.5,"['Comedy', 'Crime']","['Comedy', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 isntitromantic,1.0,"['Comedy', 'Fantasy', 'Romance']","['Comedy', 'Romance', 'Fantasy']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
-johnwickmovie,0.6666666666666666,"['Action', 'Crime', 'Thriller']","['Action', 'Comedy', 'Thriller']",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
-lalloronamovie,0.3333333333333333,"['Horror', 'Mystery', 'Thriller']","['Thriller', 'Action', 'Drama']",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+johnwickmovie,0.6666666666666666,"['Action', 'Crime', 'Thriller']","['Action', 'Comedy', 'Crime']",1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+lalloronamovie,0.6666666666666666,"['Horror', 'Mystery', 'Thriller']","['Action', 'Thriller', 'Horror']",1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
 lastblackmansf,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-latenightmovie,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-lionking,0.6666666666666666,"['Adventure', 'Animation', 'Drama']","['Drama', 'Biography', 'Adventure']",0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-littlethemovie,0.0,"['Comedy', 'Fantasy', 'Romance']","['Drama', 'History', 'Biography']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
-littlewoodsfilm,0.3333333333333333,"['Crime', 'Drama', 'Western']","['Drama', 'Biography', 'History']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+latenightmovie,0.5,"['Comedy', 'Drama']","['Drama', 'Adventure']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+lionking,0.6666666666666666,"['Adventure', 'Animation', 'Drama']","['Drama', 'Adventure', 'Action']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+littlethemovie,0.3333333333333333,"['Comedy', 'Fantasy', 'Romance']","['Drama', 'Adventure', 'Comedy']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+littlewoodsfilm,0.3333333333333333,"['Crime', 'Drama', 'Western']","['Drama', 'Adventure', 'Comedy']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 longshotmovie,0.5,"['Comedy', 'Romance']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 mamovie2019,0.0,"['Horror', 'Thriller']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 meninblack,1.0,"['Action', 'Adventure', 'Comedy']","['Adventure', 'Action', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-midsommarmovie,0.3333333333333333,"['Drama', 'Horror', 'Mystery']","['Drama', 'Action', 'Adventure']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-missbalamovie,0.3333333333333333,"['Action', 'Crime', 'Drama']","['Drama', 'History', 'Biography']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
-missinglinkfilm,0.6666666666666666,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Drama']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-onceinhollywood,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+midsommarmovie,0.3333333333333333,"['Drama', 'Horror', 'Mystery']","['Adventure', 'Action', 'Drama']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+missbalamovie,0.3333333333333333,"['Action', 'Crime', 'Drama']","['Drama', 'Adventure', 'Comedy']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+missinglinkfilm,0.6666666666666666,"['Adventure', 'Animation', 'Comedy']","['Adventure', 'Comedy', 'Action']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+onceinhollywood,0.5,"['Comedy', 'Drama']","['Adventure', 'Drama']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 onthebasisofsex,1.0,"['Biography', 'Drama']","['Drama', 'Biography']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 overcomermovie,0.5,"['Drama', 'Sport']","['Drama', 'Biography']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 petsematarymovie,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Thriller', 'Mystery']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
-pomsmovie,1.0,"['Comedy', 'Drama', 'Sport']","['Drama', 'Comedy', 'Sport']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0
-rocketmanmovie,1.0,"['Biography', 'Drama', 'Music']","['Drama', 'Biography', 'Music']",0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
-scarystoriesmovie,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Mystery', 'Thriller']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+pomsmovie,0.6666666666666666,"['Comedy', 'Drama', 'Sport']","['Drama', 'Comedy', 'Romance']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+rocketmanmovie,0.3333333333333333,"['Biography', 'Drama', 'Music']","['Drama', 'Adventure', 'Action']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+scarystoriesmovie,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Thriller', 'Mystery']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
 secretlifeofpets,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Animation']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-serenityfilm,1.0,"['Drama', 'Mystery', 'Thriller']","['Drama', 'Thriller', 'Mystery']",0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0
-shaftmovie,1.0,"['Action', 'Comedy', 'Crime']","['Action', 'Comedy', 'Crime']",1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+serenityfilm,0.3333333333333333,"['Drama', 'Mystery', 'Thriller']","['Drama', 'Comedy', 'Horror']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+shaftmovie,1.0,"['Action', 'Comedy', 'Crime']","['Action', 'Crime', 'Comedy']",1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 shazammovie,1.0,"['Action', 'Adventure', 'Comedy']","['Action', 'Adventure', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 spidermanmovie,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-stubermovie,0.3333333333333333,"['Action', 'Comedy', 'Crime']","['Comedy', 'Drama', 'Horror']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+stubermovie,0.6666666666666666,"['Action', 'Comedy', 'Crime']","['Horror', 'Comedy', 'Action']",1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
 taosdfilm,0.3333333333333333,"['Comedy', 'Drama', 'Sport']","['Action', 'Thriller', 'Drama']",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
-teenspiritmov,0.5,"['Drama', 'Music']","['Drama', 'Thriller']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
-thebestofenemies,1.0,"['Biography', 'Drama', 'History']","['Drama', 'Biography', 'History']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
-thedeaddontdie,0.6666666666666666,"['Comedy', 'Fantasy', 'Horror']","['Horror', 'Mystery', 'Comedy']",0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
-thefarewell,0.5,"['Comedy', 'Drama']","['Drama', 'Adventure']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-thehummingbirdprojectfilm,0.0,['Thriller'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-theintrudermovie,0.6666666666666666,"['Drama', 'Horror', 'Mystery']","['Drama', 'Mystery', 'Thriller']",0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0
-thekitchenmovie,1.0,"['Action', 'Crime', 'Drama']","['Action', 'Drama', 'Crime']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+teenspiritmov,0.5,"['Drama', 'Music']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+thebestofenemies,0.3333333333333333,"['Biography', 'Drama', 'History']","['Drama', 'Adventure', 'Action']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+thedeaddontdie,0.3333333333333333,"['Comedy', 'Fantasy', 'Horror']","['Horror', 'Mystery', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+thefarewell,0.0,"['Comedy', 'Drama']","['Adventure', 'Action']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+thehummingbirdprojectfilm,0.0,['Thriller'],['Comedy'],0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theintrudermovie,0.6666666666666666,"['Drama', 'Horror', 'Mystery']","['Drama', 'Comedy', 'Horror']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+thekitchenmovie,1.0,"['Action', 'Crime', 'Drama']","['Action', 'Crime', 'Drama']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 thelegomovie,1.0,"['Action', 'Adventure', 'Animation']","['Adventure', 'Action', 'Animation']",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-themustangfilm,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-theprodigymovie,0.5,"['Horror', 'Thriller']","['Drama', 'Thriller']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+themustangfilm,0.0,['Drama'],['Adventure'],0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theprodigymovie,0.5,"['Horror', 'Thriller']","['Drama', 'Horror']",0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
 thesunisalsoastar,0.5,"['Drama', 'Romance']","['Comedy', 'Romance']",0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-theupsidefilm,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-tolkienmovie,0.6666666666666666,"['Biography', 'Drama', 'War']","['Drama', 'Biography', 'Sport']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+theupsidefilm,0.5,"['Comedy', 'Drama']","['Drama', 'Adventure']",0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+tolkienmovie,0.6666666666666666,"['Biography', 'Drama', 'War']","['Drama', 'Comedy', 'Biography']",0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 toystory,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Animation']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-triplefrontier,0.3333333333333333,"['Action', 'Adventure', 'Crime']","['Drama', 'Action', 'Thriller']",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+triplefrontier,0.6666666666666666,"['Action', 'Adventure', 'Crime']","['Drama', 'Action', 'Adventure']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 uglydolls,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Animation']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-underthesilverlake,0.6666666666666666,"['Comedy', 'Crime', 'Drama']","['Drama', 'Comedy', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-usmovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Drama', 'Comedy', 'Biography']",0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-whatmenwant,1.0,"['Comedy', 'Fantasy', 'Romance']","['Comedy', 'Romance', 'Fantasy']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
-wonderparkmovie,0.6666666666666666,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Drama', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+underthesilverlake,0.3333333333333333,"['Comedy', 'Crime', 'Drama']","['Adventure', 'Action', 'Drama']",1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+usmovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Drama', 'Comedy', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+whatmenwant,1.0,"['Comedy', 'Fantasy', 'Romance']","['Comedy', 'Fantasy', 'Romance']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+wonderparkmovie,0.6666666666666666,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Drama']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 xmenmovies,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
-yesterdaymovie,0.6666666666666666,"['Comedy', 'Fantasy', 'Music']","['Comedy', 'Fantasy', 'Adventure']",0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+yesterdaymovie,0.6666666666666666,"['Comedy', 'Fantasy', 'Music']","['Comedy', 'Fantasy', 'Romance']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
