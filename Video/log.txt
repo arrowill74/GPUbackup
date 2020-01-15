@@ -1,0 +1,4 @@
+tt6843652
+	[TypeError] 'NoneType' object is not subscriptable
+tt6843652
+	[TypeError] 'NoneType' object is not subscriptable
