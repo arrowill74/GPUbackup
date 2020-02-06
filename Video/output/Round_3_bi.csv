@@ -1,0 +1,98 @@
+username,acc,truth,top_n,Action,Adventure,Animation,Biography,Comedy,Crime,Documentary,Drama,Family,Fantasy,History,Horror,Music,Mystery,Romance,Sci-Fi,Sport,Thriller,War,Western
+47metersdown,0.3333333333333333,"['Adventure', 'Drama', 'Horror']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+adogsjourneymovie,0.3333333333333333,"['Adventure', 'Comedy', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+aftermathmovie,0.3333333333333333,"['Drama', 'Romance', 'War']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+aftermovie,0.0,"['Drama', 'Romance']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+alitamovie,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+angelhasfallen,0.0,"['Action', 'Thriller']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+angrybirdsmovie,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+annabellemovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+annamovie,0.0,"['Action', 'Thriller']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+apollo11movie,0.0,"['Documentary', 'History']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+arcticmovie,0.0,"['Adventure', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+artofracingmovie,0.0,"['Comedy', 'Drama', 'Romance']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+avengers,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+beachbummovie,0.0,['Comedy'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+bernadettefilm,0.0,"['Comedy', 'Drama', 'Mystery']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+blindedbythelightmovie,0.0,"['Comedy', 'Drama', 'Music']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+booksmart,0.0,['Comedy'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+breakthroughmovie,0.0,"['Biography', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+brianbanksmovie,0.0,"['Biography', 'Drama', 'Sport']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+brightburnmovie,0.0,"['Horror', 'Sci-Fi']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+brittanyrunsmov,0.0,"['Comedy', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+captainmarvelofficial,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+captivestatemovie,0.0,"['Drama', 'Sci-Fi', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+childsplaymovie,0.0,['Horror'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+clarathefilm,0.0,['Sci-Fi'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+coldpursuitmovie,0.0,"['Action', 'Crime', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+detectivepikachumovie,0.3333333333333333,"['Action', 'Adventure', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+disneyaladdin,0.3333333333333333,"['Adventure', 'Family', 'Fantasy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+doramovie,0.0,"['Adventure', 'Family']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+dumbo,0.3333333333333333,"['Adventure', 'Family', 'Fantasy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+escaperoom,0.3333333333333333,"['Action', 'Adventure', 'Horror']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+everybodyknowsmovie,0.0,"['Crime', 'Drama', 'Mystery']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+fastandfuriousmovie,0.0,"['Action', 'Adventure']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+fightingwmyfam,0.0,"['Biography', 'Comedy', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+fivefeetapartfilm,0.0,"['Drama', 'Romance']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+glassmovie,0.0,"['Drama', 'Sci-Fi', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+gloriabellmovie,0.0,"['Comedy', 'Drama', 'Romance']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+godzillamovie,0.3333333333333333,"['Action', 'Adventure', 'Fantasy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+goodboysmovie,0.0,"['Adventure', 'Comedy']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+gretafilm,0.0,"['Drama', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+happydeathdaymovie,0.0,"['Comedy', 'Horror', 'Mystery']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+hellboymovie,0.3333333333333333,"['Action', 'Adventure', 'Fantasy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+hersmellmovie,0.0,"['Drama', 'Music']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+highlifemovie,0.3333333333333333,"['Adventure', 'Drama', 'Mystery']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+hotelmumbaifilm,0.0,"['Drama', 'History', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+httydragon,0.3333333333333333,"['Action', 'Adventure', 'Animation']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+hustlemovie,0.0,"['Comedy', 'Crime']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+isntitromantic,0.0,"['Comedy', 'Fantasy', 'Romance']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+johnwickmovie,0.0,"['Action', 'Crime', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+lalloronamovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+lastblackmansf,0.0,['Drama'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+latenightmovie,0.0,"['Comedy', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+lionking,0.3333333333333333,"['Adventure', 'Animation', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+littlethemovie,0.0,"['Comedy', 'Fantasy', 'Romance']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+littlewoodsfilm,0.3333333333333333,"['Crime', 'Drama', 'Western']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+longshotmovie,0.0,"['Comedy', 'Romance']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+mamovie2019,0.0,"['Horror', 'Thriller']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+meninblack,0.3333333333333333,"['Action', 'Adventure', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+midsommarmovie,0.0,"['Drama', 'Horror', 'Mystery']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+missbalamovie,0.0,"['Action', 'Crime', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+missinglinkfilm,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+onceinhollywood,0.0,"['Comedy', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+onthebasisofsex,0.0,"['Biography', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+overcomermovie,0.0,"['Drama', 'Sport']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+petsematarymovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+pomsmovie,0.0,"['Comedy', 'Drama', 'Sport']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+rocketmanmovie,0.0,"['Biography', 'Drama', 'Music']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+scarystoriesmovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+secretlifeofpets,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+serenityfilm,0.0,"['Drama', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+shaftmovie,0.0,"['Action', 'Comedy', 'Crime']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+shazammovie,0.3333333333333333,"['Action', 'Adventure', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+spidermanmovie,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+stubermovie,0.0,"['Action', 'Comedy', 'Crime']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+taosdfilm,0.0,"['Comedy', 'Drama', 'Sport']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+teenspiritmov,0.0,"['Drama', 'Music']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thebestofenemies,0.0,"['Biography', 'Drama', 'History']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thedeaddontdie,0.0,"['Comedy', 'Fantasy', 'Horror']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thefarewell,0.0,"['Comedy', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thehummingbirdprojectfilm,0.0,['Thriller'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+theintrudermovie,0.0,"['Drama', 'Horror', 'Mystery']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thekitchenmovie,0.0,"['Action', 'Crime', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thelegomovie,0.3333333333333333,"['Action', 'Adventure', 'Animation']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+themustangfilm,0.0,['Drama'],['Western'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+theprodigymovie,0.0,"['Horror', 'Thriller']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+thesunisalsoastar,0.0,"['Drama', 'Romance']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+theupsidefilm,0.0,"['Comedy', 'Drama']","['Western', 'War']",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+tolkienmovie,0.3333333333333333,"['Biography', 'Drama', 'War']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+toystory,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+triplefrontier,0.3333333333333333,"['Action', 'Adventure', 'Crime']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+uglydolls,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+underthesilverlake,0.0,"['Comedy', 'Crime', 'Drama']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+usmovie,0.0,"['Horror', 'Mystery', 'Thriller']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+whatmenwant,0.0,"['Comedy', 'Fantasy', 'Romance']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+wonderparkmovie,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+xmenmovies,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+yesterdaymovie,0.0,"['Comedy', 'Fantasy', 'Music']","['Western', 'War', 'Adventure']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
