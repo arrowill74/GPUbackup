@@ -1,28 +1,34 @@
 # source data
 Posts/
+Posts_97/
 Posts_165/
 Posts_starwars/
 Posts_unscraped68/
 Posts_all/
 
 Profiles/
+Profiles_97/
 Profiles_165/
 Profiles_starwars/
 Profiles_unscraped68/
 
-Image_20genres/IGimg/
-Image_20genres/Poster/
+Image/IGimg/
+Image/Poster/
 
-Video/Trailers/
-Video/SpliTrailers/
 Video/2018Movie/
-Video/2018Trailers/
+Video/2018Overlen/
 Video/2018SplitTrailers/
+Video/2018SplitTrailers_crop/
+Video/2018Trailers/
+
+Video/SpliTrailers/
+Video/SplitTrailers_crop/
+Video/Trailers/
 
 # Large files
-Image_20genres/Sample/output/IGimgFeatureVec.csv
-MRM/vector/IGimgFeatureVec.csv
-Text_20genres/model/GoogleNews-vectors-negative300.bin
+Image/Sample/output/IGimgFeatureVec.csv
+MRM/vector/*.csv
+Text/model/GoogleNews-vectors-negative300.bin
 
 **/*.h5
 **/*.jpg
