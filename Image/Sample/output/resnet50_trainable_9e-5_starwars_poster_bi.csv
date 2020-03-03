@@ -1,0 +1,166 @@
+username,acc,truth,top_n,Action,Adventure,Animation,Biography,Comedy,Crime,Documentary,Drama,Family,Fantasy,History,Horror,Music,Mystery,Romance,Sci-Fi,Sport,Thriller,War,Western
+21bridgesmovie.jpg,0.6666666666666666,"['Action', 'Crime', 'Drama']","['Action', 'Crime', 'Sci-Fi']",1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+47metersdown.jpg,0.6666666666666666,"['Adventure', 'Drama', 'Horror']","['Action', 'Adventure', 'Horror']",1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+abeautifuldaymovie.jpg,1.0,"['Biography', 'Drama']","['Drama', 'Biography']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+abominablemovie.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Animation', 'Comedy', 'Adventure']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+adastramovie.jpg,0.6666666666666666,"['Adventure', 'Drama', 'Mystery']","['Drama', 'Fantasy', 'Mystery']",0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+adogsjourneymovie.jpg,1.0,"['Adventure', 'Comedy', 'Drama']","['Drama', 'Comedy', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+aftermathmovie.jpg,0.6666666666666666,"['Drama', 'Romance', 'War']","['Romance', 'Drama', 'Biography']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+aftermovie.jpg,0.5,"['Drama', 'Romance']","['Romance', 'Horror']",0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+ahiddenlifefilm.jpg,0.0,"['Biography', 'Drama', 'War']","['Thriller', 'Mystery', 'Horror']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+alitamovie.jpg,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+angelhasfallen.jpg,0.5,"['Action', 'Thriller']","['Action', 'Sci-Fi']",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+angrybirdsmovie.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Animation', 'Adventure']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+annabellemovie.jpg,1.0,"['Horror', 'Mystery', 'Thriller']","['Thriller', 'Horror', 'Mystery']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+annamovie.jpg,0.0,"['Action', 'Thriller']","['Fantasy', 'Horror']",0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+apollo11movie.jpg,0.5,"['Documentary', 'History']","['Documentary', 'Thriller']",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+arcticdogsmovie.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Animation', 'Adventure']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+arcticmovie.jpg,0.5,"['Adventure', 'Drama']","['Drama', 'Mystery']",0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+artofracingmovie.jpg,0.6666666666666666,"['Comedy', 'Drama', 'Romance']","['Drama', 'Comedy', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+avengers.jpg,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+beachbummovie.jpg,0.0,['Comedy'],['Adventure'],0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bernadettefilm.jpg,1.0,"['Comedy', 'Drama', 'Mystery']","['Drama', 'Comedy', 'Mystery']",0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+blackandbluemovie.jpg,1.0,"['Action', 'Crime', 'Drama']","['Drama', 'Action', 'Crime']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+blackchristmas.jpg,0.3333333333333333,"['Horror', 'Mystery', 'Thriller']","['Action', 'Adventure', 'Thriller']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+blindedbythelightmovie.jpg,0.6666666666666666,"['Comedy', 'Drama', 'Music']","['Comedy', 'Drama', 'Animation']",0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+bombshellmovie.jpg,0.5,"['Biography', 'Drama']","['Biography', 'Action']",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+booksmart.jpg,1.0,['Comedy'],['Comedy'],0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+breakthroughmovie.jpg,1.0,"['Biography', 'Drama']","['Biography', 'Drama']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+brianbanksmovie.jpg,0.0,"['Biography', 'Drama', 'Sport']","['Sci-Fi', 'Mystery', 'Thriller']",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0
+brightburnmovie.jpg,0.5,"['Horror', 'Sci-Fi']","['Adventure', 'Sci-Fi']",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+brittanyrunsmov.jpg,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+captainmarvelofficial.jpg,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Sci-Fi', 'Adventure']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+captivestatemovie.jpg,0.6666666666666666,"['Drama', 'Sci-Fi', 'Thriller']","['Drama', 'Sci-Fi', 'Action']",1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+catsmovie.jpg,0.6666666666666666,"['Animation', 'Comedy', 'Drama']","['Comedy', 'Animation', 'Fantasy']",0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+charliesangels.jpg,1.0,"['Action', 'Adventure', 'Comedy']","['Action', 'Adventure', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+childsplaymovie.jpg,0.0,['Horror'],['Action'],1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+clarathefilm.jpg,1.0,['Sci-Fi'],['Sci-Fi'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+coldpursuitmovie.jpg,1.0,"['Action', 'Crime', 'Drama']","['Action', 'Drama', 'Crime']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+countdown.jpg,1.0,"['Horror', 'Thriller']","['Horror', 'Thriller']",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+currentwarmovie.jpg,0.0,"['Biography', 'Drama', 'History']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+darkwatersmovie.jpg,0.6666666666666666,"['Biography', 'Drama', 'History']","['Drama', 'Biography', 'Crime']",0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+detectivepikachumovie.jpg,1.0,"['Action', 'Adventure', 'Comedy']","['Comedy', 'Action', 'Adventure']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+disneyaladdin.jpg,1.0,"['Adventure', 'Family', 'Fantasy']","['Fantasy', 'Adventure', 'Family']",0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+disneyfrozen.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Animation']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+disneymaleficent.jpg,1.0,"['Adventure', 'Family', 'Fantasy']","['Fantasy', 'Family', 'Adventure']",0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+doctorsleepmovie.jpg,0.0,['Horror'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+dolemiteismyname.jpg,0.6666666666666666,"['Biography', 'Comedy', 'Drama']","['Drama', 'Comedy', 'Adventure']",0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+dontletgomovie.jpg,1.0,"['Drama', 'Fantasy', 'Horror']","['Drama', 'Fantasy', 'Horror']",0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0
+doramovie.jpg,0.0,"['Adventure', 'Family']","['Drama', 'Fantasy']",0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+downtonabbey_official.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+dumbo.jpg,1.0,"['Adventure', 'Family', 'Fantasy']","['Fantasy', 'Family', 'Adventure']",0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+escaperoom.jpg,0.3333333333333333,"['Action', 'Adventure', 'Horror']","['Action', 'Crime', 'Drama']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+everybodyknowsmovie.jpg,1.0,"['Crime', 'Drama', 'Mystery']","['Drama', 'Mystery', 'Crime']",0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+fastandfuriousmovie.jpg,0.5,"['Action', 'Adventure']","['Action', 'Sci-Fi']",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+fightingwmyfam.jpg,0.6666666666666666,"['Biography', 'Comedy', 'Drama']","['Action', 'Drama', 'Comedy']",1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+fivefeetapartfilm.jpg,1.0,"['Drama', 'Romance']","['Romance', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+fordvferrari.jpg,0.6666666666666666,"['Action', 'Biography', 'Drama']","['Drama', 'Comedy', 'Biography']",0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+freaksthefilm.jpg,1.0,"['Drama', 'Sci-Fi', 'Thriller']","['Drama', 'Thriller', 'Sci-Fi']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0
+geminimanmovie.jpg,0.6666666666666666,"['Action', 'Drama', 'Sci-Fi']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+glassmovie.jpg,0.6666666666666666,"['Drama', 'Sci-Fi', 'Thriller']","['Drama', 'Thriller', 'Crime']",0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+gloriabellmovie.jpg,0.6666666666666666,"['Comedy', 'Drama', 'Romance']","['Drama', 'Comedy', 'Music']",0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+godzillamovie.jpg,1.0,"['Action', 'Adventure', 'Fantasy']","['Action', 'Fantasy', 'Adventure']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+goldfinchmovie.jpg,0.0,['Drama'],['Thriller'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+goodboysmovie.jpg,0.5,"['Adventure', 'Comedy']","['Comedy', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+goodliarmovie.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+gretafilm.jpg,0.3333333333333333,"['Drama', 'Mystery', 'Thriller']","['Drama', 'Comedy', 'Animation']",0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+halathemovie.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+happydeathdaymovie.jpg,0.6666666666666666,"['Comedy', 'Horror', 'Mystery']","['Horror', 'Mystery', 'Action']",1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+harrietfilm.jpg,1.0,"['Biography', 'Drama', 'History']","['Drama', 'Biography', 'History']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+hellboymovie.jpg,1.0,"['Action', 'Adventure', 'Fantasy']","['Action', 'Fantasy', 'Adventure']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+hersmellmovie.jpg,0.5,"['Drama', 'Music']","['Drama', 'Thriller']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+highlifemovie.jpg,0.3333333333333333,"['Adventure', 'Drama', 'Mystery']","['Drama', 'Biography', 'Action']",1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+highstrungmovie.jpg,1.0,['Romance'],['Romance'],0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+honeyboymovie.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+hotelmumbaifilm.jpg,0.0,"['Drama', 'History', 'Thriller']","['Fantasy', 'Action', 'Adventure']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+httydragon.jpg,1.0,"['Action', 'Adventure', 'Animation']","['Adventure', 'Animation', 'Action']",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hustlemovie.jpg,1.0,"['Comedy', 'Crime']","['Comedy', 'Crime']",0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hustlersmovie.jpg,0.6666666666666666,"['Comedy', 'Crime', 'Drama']","['Romance', 'Comedy', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+isntitromantic.jpg,0.3333333333333333,"['Comedy', 'Fantasy', 'Romance']","['Comedy', 'Animation', 'Adventure']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+itmovieofficial.jpg,0.6666666666666666,"['Drama', 'Fantasy', 'Horror']","['Horror', 'Drama', 'Mystery']",0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+jayandsilentbob.jpg,1.0,['Comedy'],['Comedy'],0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+johnwickmovie.jpg,0.6666666666666666,"['Action', 'Crime', 'Thriller']","['Action', 'Adventure', 'Thriller']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+jojorabbitmovie.jpg,1.0,"['Comedy', 'Drama', 'War']","['Drama', 'War', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+jokermovie.jpg,1.0,"['Crime', 'Drama', 'Thriller']","['Drama', 'Crime', 'Thriller']",0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+judythefilm.jpg,1.0,"['Biography', 'Drama', 'History']","['Biography', 'Drama', 'History']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+jumanjimovie.jpg,1.0,"['Action', 'Adventure', 'Comedy']","['Adventure', 'Action', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+justmercyfilm.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+knivesout.jpg,1.0,"['Comedy', 'Crime', 'Drama']","['Comedy', 'Crime', 'Drama']",0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+lalloronamovie.jpg,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Thriller', 'Mystery']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+lastblackmansf.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+lastchristmasthemovie.jpg,1.0,"['Comedy', 'Romance']","['Romance', 'Comedy']",0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+latenightmovie.jpg,0.5,"['Comedy', 'Drama']","['Romance', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+lighthousemovie.jpg,0.6666666666666666,"['Drama', 'Fantasy', 'Horror']","['Drama', 'Biography', 'Horror']",0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+lionking.jpg,1.0,"['Adventure', 'Animation', 'Drama']","['Drama', 'Adventure', 'Animation']",0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+littlethemovie.jpg,1.0,"['Comedy', 'Fantasy', 'Romance']","['Fantasy', 'Comedy', 'Romance']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+littlewomenmovie.jpg,0.5,"['Drama', 'Romance']","['Drama', 'Crime']",0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+littlewoodsfilm.jpg,0.6666666666666666,"['Crime', 'Drama', 'Western']","['Crime', 'Drama', 'Comedy']",0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+longshotmovie.jpg,0.5,"['Comedy', 'Romance']","['Fantasy', 'Comedy']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+lordsofchaosmovie.jpg,0.6666666666666666,"['Biography', 'Drama', 'Horror']","['Thriller', 'Horror', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0
+lucyintheskyfilm.jpg,0.5,"['Drama', 'Sci-Fi']","['Horror', 'Sci-Fi']",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+mamovie2019.jpg,1.0,"['Horror', 'Thriller']","['Horror', 'Thriller']",0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+marriagestory.jpg,0.5,"['Comedy', 'Drama']","['Drama', 'Mystery']",0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+meettheaddams.jpg,1.0,"['Animation', 'Comedy', 'Family']","['Family', 'Animation', 'Comedy']",0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+meninblack.jpg,1.0,"['Action', 'Adventure', 'Comedy']","['Action', 'Adventure', 'Comedy']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+midsommarmovie.jpg,1.0,"['Drama', 'Horror', 'Mystery']","['Drama', 'Horror', 'Mystery']",0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+midwaymovie.jpg,0.3333333333333333,"['Action', 'Drama', 'History']","['Action', 'Adventure', 'Sci-Fi']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+missbalamovie.jpg,0.6666666666666666,"['Action', 'Crime', 'Drama']","['Action', 'Crime', 'Comedy']",1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+missinglinkfilm.jpg,0.3333333333333333,"['Adventure', 'Animation', 'Comedy']","['Action', 'Horror', 'Comedy']",1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+motherlessbklyn.jpg,1.0,"['Crime', 'Drama']","['Drama', 'Crime']",0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+onceinhollywood.jpg,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+onthebasisofsex.jpg,0.5,"['Biography', 'Drama']","['Drama', 'Animation']",0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+overcomermovie.jpg,1.0,"['Drama', 'Sport']","['Drama', 'Sport']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+peanutbutterfalcon.jpg,0.3333333333333333,"['Adventure', 'Comedy', 'Drama']","['Action', 'Adventure', 'Fantasy']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+petsematarymovie.jpg,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Thriller', 'Mystery']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+piercingmovie.jpg,0.0,"['Horror', 'Mystery', 'Thriller']","['Action', 'Fantasy', 'Adventure']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+playingwithfire.jpg,0.0,['Comedy'],['Action'],1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+playmobilthemovie.jpg,0.6666666666666666,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Action']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pomsmovie.jpg,0.3333333333333333,"['Comedy', 'Drama', 'Sport']","['Biography', 'Drama', 'Music']",0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+queenandslim.jpg,0.0,['Drama'],['Crime'],0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+rambomovie.jpg,0.6666666666666666,"['Action', 'Adventure', 'Thriller']","['Action', 'Sci-Fi', 'Adventure']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+readyornotfilm.jpg,0.0,"['Comedy', 'Horror', 'Mystery']","['Drama', 'Crime', 'Thriller']",0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+richardjewellfilm.jpg,0.0,['Drama'],['Horror'],0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+rocketmanmovie.jpg,0.3333333333333333,"['Biography', 'Drama', 'Music']","['Action', 'Crime', 'Drama']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+scarystoriesmovie.jpg,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Thriller', 'Mystery']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+secretlifeofpets.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Adventure', 'Animation', 'Comedy']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+serenityfilm.jpg,0.6666666666666666,"['Drama', 'Mystery', 'Thriller']","['Drama', 'Fantasy', 'Mystery']",0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+shaftmovie.jpg,1.0,"['Action', 'Comedy', 'Crime']","['Action', 'Crime', 'Comedy']",1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+shazammovie.jpg,0.6666666666666666,"['Action', 'Adventure', 'Comedy']","['Action', 'Comedy', 'Sci-Fi']",1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+spidermanmovie.jpg,1.0,"['Action', 'Adventure', 'Sci-Fi']","['Sci-Fi', 'Action', 'Adventure']",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+spiesindisguise.jpg,1.0,"['Action', 'Adventure', 'Animation']","['Action', 'Adventure', 'Animation']",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+starwars.jpg,1.0,"['Action', 'Adventure', 'Fantasy']","['Action', 'Fantasy', 'Adventure']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+stormboymovie.jpg,1.0,"['Adventure', 'Drama', 'Family']","['Drama', 'Adventure', 'Family']",0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+stubermovie.jpg,1.0,"['Action', 'Comedy', 'Crime']","['Action', 'Comedy', 'Crime']",1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+taosdfilm.jpg,0.6666666666666666,"['Comedy', 'Drama', 'Sport']","['Comedy', 'Crime', 'Drama']",0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+teenspiritmov.jpg,1.0,"['Drama', 'Music']","['Music', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+terminator.jpg,0.3333333333333333,"['Action', 'Adventure', 'Sci-Fi']","['Fantasy', 'Action', 'Horror']",1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+theaeronautsmov.jpg,0.6666666666666666,"['Action', 'Adventure', 'Biography']","['Action', 'Adventure', 'Fantasy']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+thebestofenemies.jpg,1.0,"['Biography', 'Drama', 'History']","['Drama', 'Biography', 'History']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+thedeaddontdie.jpg,0.6666666666666666,"['Comedy', 'Fantasy', 'Horror']","['Horror', 'Fantasy', 'Action']",1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+thefarewell.jpg,1.0,"['Comedy', 'Drama']","['Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+thehighwaymen.jpg,0.6666666666666666,"['Biography', 'Crime', 'Drama']","['Drama', 'History', 'Biography']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+thehummingbirdprojectfilm.jpg,0.0,['Thriller'],['Fantasy'],0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+theintrudermovie.jpg,1.0,"['Drama', 'Horror', 'Mystery']","['Horror', 'Mystery', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+theirishmanfilm.jpg,0.6666666666666666,"['Biography', 'Crime', 'Drama']","['Drama', 'Biography', 'Horror']",0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+thekitchenmovie.jpg,0.3333333333333333,"['Action', 'Crime', 'Drama']","['Drama', 'Comedy', 'Thriller']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+thelegomovie.jpg,1.0,"['Action', 'Adventure', 'Animation']","['Action', 'Adventure', 'Animation']",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+themustangfilm.jpg,1.0,['Drama'],['Drama'],0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+thenightingalefilm.jpg,0.6666666666666666,"['Adventure', 'Drama', 'Thriller']","['Mystery', 'Thriller', 'Drama']",0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0
+theprodigymovie.jpg,0.5,"['Horror', 'Thriller']","['Drama', 'Thriller']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0
+thesunisalsoastar.jpg,1.0,"['Drama', 'Romance']","['Drama', 'Romance']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+theupsidefilm.jpg,1.0,"['Comedy', 'Drama']","['Comedy', 'Drama']",0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+tolkienmovie.jpg,0.6666666666666666,"['Biography', 'Drama', 'War']","['Drama', 'Biography', 'History']",0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+toystory.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Animation', 'Adventure']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+triplefrontier.jpg,0.6666666666666666,"['Action', 'Adventure', 'Crime']","['Drama', 'Action', 'Crime']",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+uglydolls.jpg,1.0,"['Adventure', 'Animation', 'Comedy']","['Comedy', 'Adventure', 'Animation']",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+uncutgems.jpg,1.0,"['Comedy', 'Crime', 'Drama']","['Comedy', 'Crime', 'Drama']",0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+underthesilverlake.jpg,0.3333333333333333,"['Comedy', 'Crime', 'Drama']","['Comedy', 'Action', 'Adventure']",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+usmovie.jpg,1.0,"['Horror', 'Mystery', 'Thriller']","['Horror', 'Mystery', 'Thriller']",0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+wavesmovie.jpg,1.0,"['Drama', 'Romance']","['Drama', 'Romance']",0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+whatmenwant.jpg,1.0,"['Comedy', 'Fantasy', 'Romance']","['Fantasy', 'Comedy', 'Romance']",0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+wonderparkmovie.jpg,0.6666666666666666,"['Adventure', 'Animation', 'Comedy']","['Adventure', 'Animation', 'Action']",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+wrinklestheclown.jpg,0.6666666666666666,"['Comedy', 'Documentary', 'Horror']","['Horror', 'Drama', 'Comedy']",0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+xmenmovies.jpg,0.6666666666666666,"['Action', 'Adventure', 'Sci-Fi']","['Action', 'Adventure', 'Fantasy']",1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+yardiefilm.jpg,0.5,"['Crime', 'Drama']","['Drama', 'Biography']",0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+yesterdaymovie.jpg,0.3333333333333333,"['Comedy', 'Fantasy', 'Music']","['Drama', 'Comedy', 'Biography']",0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+zombieland.jpg,1.0,"['Action', 'Comedy', 'Horror']","['Horror', 'Action', 'Comedy']",1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
