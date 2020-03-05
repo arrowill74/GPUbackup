@@ -28,6 +28,7 @@ Video/Trailers/
 # Large files
 Image/Sample/output/IGimgFeatureVec.csv
 MRM/vector/*.csv
+MRM/latent_factor/
 Text/model/GoogleNews-vectors-negative300.bin
 
 **/*.h5
