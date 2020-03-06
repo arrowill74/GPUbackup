@@ -12,22 +12,10 @@ Profiles_165/
 Profiles_starwars/
 Profiles_unscraped68/
 
-Image/IGimg/
-Image/Poster/
-
-Video/2018Movie/
-Video/2018Overlen/
-Video/2018SplitTrailers/
-Video/2018SplitTrailers_crop/
-Video/2018Trailers/
-
-Video/SpliTrailers/
-Video/SplitTrailers_crop/
-Video/Trailers/
+IMDb_Datasets/
 
 # Large files
 Image/Sample/output/IGimgFeatureVec.csv
-MRM/vector/*.csv
 MRM/latent_factor/
 Text/model/GoogleNews-vectors-negative300.bin
 
