@@ -17,6 +17,7 @@ IMDb_Datasets/
 # Large files
 Image/Sample/output/IGimgFeatureVec.csv
 MRM/latent_factor/
+MRM/weight/
 Text/model/GoogleNews-vectors-negative300.bin
 
 **/*.h5
