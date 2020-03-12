@@ -28,3 +28,5 @@ Text/model/GoogleNews-vectors-negative300.bin
 
 # jupyter notebook
 **/.ipynb_checkpoints/
+MRM/.git/
+MRM/.gitignore
