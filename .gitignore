@@ -23,6 +23,7 @@ Text/model/GoogleNews-vectors-negative300.bin
 # Public repo
 MRM/.git/
 MRM/.gitignore
+Baseline/.git/
 Baseline/**/.git/
 Baseline/**/.gitignore
 Baseline/**/LICENSE
