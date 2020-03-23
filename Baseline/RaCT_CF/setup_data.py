@@ -211,7 +211,7 @@ def load_tr_te_data(csv_file_tr, csv_file_te):
 
 def process_unzipped_data(DATA_DIR,
                           force_overwrite=False,
-                          n_heldout_users=10000,
+                          n_heldout_users=150, #10000, # MRM
                           discard_ratings_below=3.5,
                           min_users_per_item_to_include=0,
                           min_clicks_per_user_to_include=5):
@@ -231,7 +231,7 @@ def process_unzipped_data(DATA_DIR,
 
 
     # binarize the data (only keep ratings >= 4)
-    raw_data = raw_data[raw_data['rating'] > discard_ratings_below]
+    # raw_data = raw_data[raw_data['rating'] > discard_ratings_below] # MRM
 
 
     # ### Data splitting procedure
@@ -363,7 +363,7 @@ def process_unzipped_data(DATA_DIR,
             else:
                 tr_list.append(group)
 
-            if i % 1000 == 0:
+            if i % 100 == 0: #1000 # MRM
                 print("%d users sampled" % i)
                 sys.stdout.flush()
 
