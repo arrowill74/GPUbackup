@@ -12,9 +12,9 @@ if __name__ == '__main__':
     """
 
     BREAK_EARLY = False
-    BATCH_SIZE = 500
+    BATCH_SIZE = 50 #500 #MRM
 
-    for data_subdir in ['ml-20m', 'netflix-prize', 'msd']:
+    for data_subdir in ['ml-20m']: #, 'netflix-prize', 'msd']: #MRM
         actor_path = "WMF_ACTOR_TRAIN_{}".format(data_subdir)
         train(
             model_class='wmf',
@@ -26,12 +26,12 @@ if __name__ == '__main__':
             ac_reg_loss_scaler=0.0,
             actor_reg_loss_scaler=0.0001,
             evaluation_metric="NDCG",
-            logging_frequency=50,
+            logging_frequency=5, #50, #MRM
             batch_size=BATCH_SIZE,
             break_early=BREAK_EARLY,
             verbose=False,
             positive_weights=5.0,
-            version_tag="FULL_RUN_ON_OTHER_DATASETS",
+            version_tag="", #"FULL_RUN_ON_OTHER_DATASETS", #MRM
             path_to_save_actor=actor_path,
             log_critic_training_error=False,
         )
@@ -52,7 +52,7 @@ if __name__ == '__main__':
             break_early=BREAK_EARLY,
             verbose=False,
             positive_weights=5.0,
-            version_tag="FULL_RUN_ON_OTHER_DATASETS",
+            version_tag="" #"FULL_RUN_ON_OTHER_DATASETS", #MRM
         )
 
         print("On to round 2! Now we'll do the critic.")
@@ -72,7 +72,7 @@ if __name__ == '__main__':
             break_early=BREAK_EARLY,
             verbose=False,
             positive_weights=5.0,
-            version_tag="FULL_RUN_ON_OTHER_DATASETS",
+            version_tag="", #"FULL_RUN_ON_OTHER_DATASETS", #MRM
             restore_trained_actor_path=actor_path,
         )
 
@@ -92,7 +92,7 @@ if __name__ == '__main__':
             break_early=BREAK_EARLY,
             verbose=False,
             positive_weights=5.0,
-            version_tag="FULL_RUN_ON_OTHER_DATASETS",
+            version_tag="", #"FULL_RUN_ON_OTHER_DATASETS", #MRM
             restore_trained_actor_path=actor_path,
         )
 
