@@ -22,7 +22,7 @@ from data_loaders import load_train_data, load_tr_te_data, get_num_items
 
 from data_loaders import train_dataset, tr_te_dataset
 
-from evaluation_functions import NDCG_binary_at_k_batch, Recall_at_k_batch, average_precision_at_k_batch
+from evaluation_functions import NDCG_binary_at_k_batch, Recall_at_k_batch, Prec_at_k_batch, average_precision_at_k_batch
 
 from models import (MultiVAE, WarpEncoder, WeightedMatrixFactorization, ProperlyShapedMultiDAE,
                     VWMF, GaussianVAE, MultiVAEWithPhase4WARP, LambdaRankEncoder, MultiVAEWithPhase4LambdaRank)
@@ -653,8 +653,10 @@ def test(
     # ndcg100_list, ap100_list, recall100_list = [], [], []
     # ndcg100_list, recall50_list, recall20_list = [], [], []
     ndcg100_list, recall50_list, recall20_list, ndcg200_list, ndcg5_list, ndcg3_list, ndcg1_list = [], [], [], [], [], [], []
-
     dcg100_list = []
+    n10_list, r1_list, r5_list = [], [], []
+    p1_list, p5_list = [], []
+    aps = []
 
     with tf.Session() as sess:
         model.saver.restore(sess, '{}/model'.format(chkpt_dir))
@@ -684,14 +686,24 @@ def test(
                     [model.prediction, model.batch_of_users, model.heldout_batch],
                     feed_dict=feed_dict)
 
-                ndcg100_list.append( #ndcg100_list changed to 10
+                n10_list.append( #ndcg100_list changed to 10
                     NDCG_binary_at_k_batch(
                         pred_val, heldout_batch, k=10, input_batch=batch_of_users))
+
+                p1_list.append(Prec_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
+                r1_list.append(Recall_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
+                
+                p5_list.append(Prec_at_k_batch(pred_val, heldout_batch, k=5, input_batch=batch_of_users))
+                r5_list.append(Recall_at_k_batch(pred_val, heldout_batch, k=5, input_batch=batch_of_users))
+
                 recall50_list.append( #recall50_list changed to 5
                     Recall_at_k_batch(pred_val, heldout_batch, k=5, input_batch=batch_of_users))
                 recall20_list.append( #recall20_list changed to 1
                     Recall_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
                 
+                aps.append(
+                    average_precision_at_k_batch(pred_val, heldout_batch, k=150, input_batch=None))
+
                 # ndcg200_list.append(
                 #     NDCG_binary_at_k_batch(
                 #         pred_val, heldout_batch, k=200, input_batch=batch_of_users))
@@ -733,9 +745,18 @@ def test(
         except tf.errors.OutOfRangeError:
             print("Testing done. That broke it out of the loop.")
 
-    ndcg100_list = np.concatenate(ndcg100_list)
+    # ndcg100_list = np.concatenate(ndcg100_list)
     # ap100_list = np.concatenate(ap100_list)
     # recall100_list = np.concatenate(recall100_list)
+    n10_list = np.concatenate(n10_list)
+
+    p1_list = np.concatenate(p1_list)
+    r1_list = np.concatenate(r1_list)
+
+    p5_list = np.concatenate(p5_list)
+    r5_list = np.concatenate(r5_list)
+
+    aps = np.concatenate(aps)
 
     # In[64]:
     print("Test UNNORMALIZED DCG@100=%.5f (%.5f)" % (np.mean(dcg100_list),
@@ -758,16 +779,32 @@ def test(
 
 
     import json
+    def F1_score(prec,rec):
+        f1 = 2*((prec*rec)/(prec+rec))
+        return f1
+
     with open("../TEST_RESULTS.txt", "a") as f:
         f.write("\n\n")
         f.write(json.dumps(train_args) + "\n")
-        f.write("Test NDCG@10=%.5f (%.5f)\n" % (np.mean(ndcg100_list),
-                                                 np.std(ndcg100_list) / np.sqrt(len(ndcg100_list))))
-        f.write("Test Recall@5=%.5f (%.5f)\n" %
-                (np.mean(recall50_list), np.std(recall50_list) / np.sqrt(len(recall50_list))))
-        f.write("Test Recall@1=%.5f (%.5f)\n" %
-                (np.mean(recall20_list), np.std(recall20_list) / np.sqrt(len(recall20_list))))
+        f.write("Test NDCG@10=%.5f (%.5f)\n" % (np.mean(n10_list),
+                                                 np.std(n10_list) / np.sqrt(len(n10_list))))
 
+        f.write("Test Prec@1=%.5f (%.5f)\n" %
+                (np.mean(p1_list), np.std(p1_list) / np.sqrt(len(p1_list))))
+        f.write("Test Recall@1=%.5f (%.5f)\n" %
+                (np.mean(r1_list), np.std(r1_list) / np.sqrt(len(r1_list))))
+        f.write('F1@1=%.5f \n' % 
+                (F1_score(np.mean(p1_list), np.mean(r1_list))))
+
+        f.write("Test Prec@5=%.5f (%.5f)\n" %
+                (np.mean(p5_list), np.std(p5_list) / np.sqrt(len(p5_list))))
+        f.write("Test Recall@5=%.5f (%.5f)\n" %
+                (np.mean(r5_list), np.std(r5_list) / np.sqrt(len(r5_list))))
+        f.write('F1@5=%.5f \n' % 
+                (F1_score(np.mean(p5_list), np.mean(p5_list))))
+        
+        f.write('MAP=%.5f \n' % np.mean(aps))
+        
         # f.write("Test NDCG@0200=%.5f (%.5f)\n" % (np.mean(ndcg200_list),
         #                                     np.std(ndcg200_list) / np.sqrt(len(ndcg200_list))))
         # f.write("Test NDCG@5=%.5f (%.5f)\n" % (np.mean(ndcg5_list),

@@ -84,6 +84,28 @@ def Recall_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None):
     recall = recall.astype(np.float32)
     return recall
 
+def Prec_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None):
+    if input_batch is not None:
+        X_pred[input_batch.nonzero()] = -np.inf
+    batch_users = X_pred.shape[0]
+
+    idx = bn.argpartition(-X_pred, k, axis=1)
+    X_pred_binary = np.zeros_like(X_pred, dtype=bool)
+    X_pred_binary[np.arange(batch_users)[:, np.newaxis], idx[:, :k]] = True
+
+    X_true_binary = (heldout_batch > 0)#.toarray()
+    try:
+        X_true_binary = X_true_binary.toarray()
+    except:
+        # print("Wasn't sparse")
+        pass
+
+    tmp = (np.logical_and(X_true_binary, X_pred_binary).sum(axis=1)).astype(
+        np.float32)
+    prec = tmp / np.maximum(np.minimum(k, X_pred_binary.sum(axis=1)), 1)
+    prec = prec.astype(np.float32)
+    return prec
+
 def average_precision_at_k(scores, ground_truth, k=100):
     """
     Assumes that ground-truth is 0 for false and 1 for true. This rests heavily on that.
@@ -120,7 +142,6 @@ def average_precision_at_k(scores, ground_truth, k=100):
 
     recall_scaler = min(total_num_good, k)
     return running_score / recall_scaler
-
 
 def average_precision_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None):
     if input_batch is not None:
