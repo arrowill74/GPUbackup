@@ -11,21 +11,24 @@ class DataSet(object):
         self.trainDict = self.getTrainDict()
 
     def getData(self, fileName):
+        print('getData...')
         if fileName == 'ml-1m':
             print("Loading ml-1m data set...")
             data = []
-            filePath = './Data/ml-1m/ratings.dat'
+            # filePath = './Data/ml-1m/ratings.dat'
+            filePath = './Data/ours/DMF_data.dat'
             u = 0
             i = 0
             maxr = 0.0
             with open(filePath, 'r') as f:
                 for line in f:
                     if line:
-                        lines = line[:-1].split("::")
+                        # lines = line[:-1].split("::")
+                        lines = line[:-1].split(":")
                         user = int(lines[0])
                         movie = int(lines[1])
                         score = float(lines[2])
-                        time = int(lines[3])
+                        time = int(lines[3]) #978298814
                         data.append((user, movie, score, time))
                         if user > u:
                             u = user
@@ -45,6 +48,7 @@ class DataSet(object):
             sys.exit()
 
     def getTrainTest(self):
+        print('getTrainTest...')
         data = self.data
         data = sorted(data, key=lambda x: (x[0], x[3]))
         train = []
@@ -62,12 +66,14 @@ class DataSet(object):
         return train, test
 
     def getTrainDict(self):
+        print('getTrainDict...')
         dataDict = {}
         for i in self.train:
             dataDict[(i[0], i[1])] = i[2]
         return dataDict
 
     def getEmbedding(self):
+        print('getEmbedding...')
         train_matrix = np.zeros([self.shape[0], self.shape[1]], dtype=np.float32)
         for i in self.train:
             user = i[0]
@@ -77,6 +83,7 @@ class DataSet(object):
         return np.array(train_matrix)
 
     def getInstances(self, data, negNum):
+        print('getInstances...')
         user = []
         item = []
         rate = []
@@ -94,19 +101,20 @@ class DataSet(object):
         return np.array(user), np.array(item), np.array(rate)
 
     def getTestNeg(self, testData, negNum):
+        print('getTestNeg...')
         user = []
         item = []
         for s in testData:
             tmp_user = []
             tmp_item = []
-            u = s[0]
-            i = s[1]
+            u = s[0] # user
+            i = s[1] # item
             tmp_user.append(u)
             tmp_item.append(i)
             neglist = set()
             neglist.add(i)
             for t in range(negNum):
-                j = np.random.randint(self.shape[1])
+                j = np.random.randint(self.shape[1]) # 3952
                 while (u, j) in self.trainDict or j in neglist:
                     j = np.random.randint(self.shape[1])
                 neglist.add(j)
