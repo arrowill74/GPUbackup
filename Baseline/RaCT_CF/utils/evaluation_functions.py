@@ -1,6 +1,22 @@
 import bottleneck as bn
 import numpy as np
 from scipy import sparse
+from sklearn.metrics import average_precision_score
+
+def MAP(X_pred,heldout_batch):
+    X_pred[X_pred == -np.inf] = -9999999999
+    batch_users = X_pred.shape[0]
+    X_true_binary = heldout_batch#.toarray()
+    
+    total_prec = 0
+    for u in range(batch_users):
+        y_true = X_true_binary[u]
+        y_scores = X_pred[u]
+        total_prec += average_precision_score(y_true, y_scores)
+        
+    Map_value = total_prec/batch_users
+    
+    return Map_value
 
 def NDCG_binary_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None, normalize=True):
     '''
@@ -80,9 +96,10 @@ def Recall_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None):
 
     tmp = (np.logical_and(X_true_binary, X_pred_binary).sum(axis=1)).astype(
         np.float32)
-    recall = tmp / np.maximum(np.minimum(k, X_true_binary.sum(axis=1)), 1)
-    recall = recall.astype(np.float32)
-    return recall
+    # recall = tmp / np.maximum(np.minimum(k, X_true_binary.sum(axis=1)), 1)
+    # recall = recall.astype(np.float32)
+    rec = np.sum(tmp) / np.sum(X_true_binary.sum(axis=1))
+    return rec
 
 def Prec_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None):
     if input_batch is not None:
@@ -102,8 +119,9 @@ def Prec_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None):
 
     tmp = (np.logical_and(X_true_binary, X_pred_binary).sum(axis=1)).astype(
         np.float32)
-    prec = tmp / np.maximum(np.minimum(k, X_pred_binary.sum(axis=1)), 1)
-    prec = prec.astype(np.float32)
+    # prec = tmp / np.maximum(np.minimum(k, X_pred_binary.sum(axis=1)), 1)
+    # prec = prec.astype(np.float32)
+    prec = np.sum(tmp) / (batch_users * k)
     return prec
 
 def average_precision_at_k(scores, ground_truth, k=100):
