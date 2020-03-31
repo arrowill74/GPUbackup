@@ -2,12 +2,20 @@
 
 import numpy as np
 import sys
+import json
 
+def read_json(src_path):
+    with open(src_path, 'r') as json_file:
+        data = json.load(json_file)
+    return data
 
 class DataSet(object):
     def __init__(self, fileName):
         self.data, self.shape = self.getData(fileName)
-        self.train, self.test = self.getTrainTest()
+        # self.train, self.test = self.getTrainTest()
+        self.train = read_json('./Data/ours/original_split/train.json')
+        self.test = read_json('./Data/ours/original_split/test.json')
+        print('train/test:', len(self.train), len(self.test))
         self.trainDict = self.getTrainDict()
 
     def getData(self, fileName):
@@ -42,6 +50,7 @@ class DataSet(object):
                   "\tUser Num: {}\n"
                   "\tItem Num: {}\n"
                   "\tData Size: {}".format(u, i, len(data)))
+            print([u, i])
             return data, [u, i]
         else:
             print("Current data set is not support!")

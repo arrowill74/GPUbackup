@@ -8,7 +8,11 @@ import sys
 import os
 import heapq
 import math
+import json
 
+def write_json(data,dst_path):
+    with open(dst_path, 'w') as outfile:
+        json.dump(data, outfile)
 
 def main():
     parser = argparse.ArgumentParser(description="Options")
@@ -44,7 +48,7 @@ class Model:
 
         self.negNum = args.negNum
         # self.testNeg = self.dataSet.getTestNeg(self.test, 99)
-        self.testNeg = self.dataSet.getTestNeg(self.test, 24)
+        self.testNeg = self.dataSet.getTestNeg(self.test, 31)
         self.add_embedding_matrix()
 
         self.add_placeholders()
@@ -159,6 +163,7 @@ class Model:
             print("="*20+"Epoch ", epoch, "End"+"="*20)
         print("Best hr: {}, NDCG: {}, At Epoch {}".format(best_hr, best_NDCG, best_epoch))
         print("Training complete!")
+        # self.metrics(self.sess)
 
     def run_epoch(self, sess, verbose=10):
         train_u, train_i, train_r = self.dataSet.getInstances(self.train, self.negNum)
@@ -203,35 +208,170 @@ class Model:
                     return 1
             return 0
         def getNDCG(ranklist, targetItem):
+            # print('ranklist:',ranklist)
+            # print('targetItem:', targetItem)
             for i in range(len(ranklist)):
                 item = ranklist[i]
                 if item == targetItem:
                     return math.log(2) / math.log(i+2)
             return 0
 
-
         hr =[]
         NDCG = []
         testUser = self.testNeg[0]
         testItem = self.testNeg[1]
-        for i in range(len(testUser)):
+        usr_scores = {}
+        for i in range(len(testUser)): # 1078
+            usr_idx = testUser[i][0]
             target = testItem[i][0]
             feed_dict = self.create_feed_dict(testUser[i], testItem[i])
-            predict = sess.run(self.y_, feed_dict=feed_dict)
-
+            predict = sess.run(self.y_, feed_dict=feed_dict) # len 32
+            # print('predict:', predict)
+            usr_scores[str(usr_idx)] = list(predict)
             item_score_dict = {}
-
-            for j in range(len(testItem[i])):
+            for j in range(len(testItem[i])): #32
                 item = testItem[i][j]
                 item_score_dict[item] = predict[j]
 
-            ranklist = heapq.nlargest(topK, item_score_dict, key=item_score_dict.get)
-
+            # ranklist = heapq.nlargest(topK, item_score_dict, key=item_score_dict.get)
+            ranklist = heapq.nlargest(32, item_score_dict, key=item_score_dict.get)
             tmp_hr = getHitRatio(ranklist, target)
+            # print(target)
             tmp_NDCG = getNDCG(ranklist, target)
             hr.append(tmp_hr)
             NDCG.append(tmp_NDCG)
+        print('Len usr_scores:', len(usr_scores))
+        write_json(str(usr_scores),'./Data/ours/usr_scores.json')
         return np.mean(hr), np.mean(NDCG)
 
+    def metrics(self, sess):
+        RS = []
+        targets = []
+
+        testUser = self.testNeg[0]
+        testItem = self.testNeg[1]
+        undup = []
+        for i in range(len(testUser)): # 1078
+            if testUser[i][0] in undup:
+                continue
+            
+            undup.append(testUser[i][0])
+
+            target = testItem[i]
+            targets.append(target)
+
+            feed_dict = self.create_feed_dict(testUser[i], testItem[i])
+            predict = sess.run(self.y_, feed_dict=feed_dict) # len 32
+            RS.append(predict)
+
+        print('undup:', len(undup), undup)
+        # print(len(ranklists), len(targets))
+        Rss = np.asarray(RS)
+        targets = np.asarray(targets)
+        print(Rss.shape, targets.shape)
+
+        usr_test_amount = 150
+        sumtarget = len(testUser) # 1078
+        testRS = Rss
+        target = np.load('./Data/ours/target.npy')
+
+        def F1_score(prec,rec):
+            f1 = 2*((prec*rec)/(prec+rec))
+            return f1
+
+        def topN(RSls, n):
+            maxn = np.argsort(RSls)[::-1][:n]
+            return maxn
+        all_sort = []
+
+        for i in range(usr_test_amount):
+            all_sort.append(topN(list(testRS[i]),len(testRS[i])))
+            
+        all_sort = np.asarray(all_sort)
+        print(all_sort.shape)
+        def DCG(prec_list): #找出前n名的[1,1,1,0,...]
+            dcg = 0
+            for i in range(len(prec_list)):
+                dcg += (2**prec_list[i]-1)/math.log2(i+2)
+            return dcg
+
+        def NDCG(target, testRS, num_ndcg, all_sort): #target是真正的喜好
+            total_ndcg = 0
+            
+            for m in range(usr_test_amount): # the number of testing users
+                idcg = DCG(target[m][:num_ndcg])
+                
+                pre_list = []
+                for s in all_sort[m][:num_ndcg]:
+                    #print(m,s,target[m][s])
+                    pre_list.append(target[m][s]) #把prec_list 的 score加進去
+                
+                dcg = DCG(pre_list)
+                ndcg = dcg/idcg
+                total_ndcg += ndcg
+                
+            avg_ndcg = total_ndcg/usr_test_amount
+            return avg_ndcg
+
+        from sklearn.metrics import average_precision_score
+
+        def MAP(target,testRS):
+            total_prec = 0
+            for u in range(usr_test_amount):
+                y_true = target[u]
+                y_scores = testRS[u]
+                total_prec += average_precision_score(y_true, y_scores)
+                
+            Map_value = total_prec/usr_test_amount
+            
+            return Map_value
+
+        print('\n==============================\n')
+        # Top N
+        N = [1, 5]
+        correct = 0
+
+        for n in N:
+            print('Top', n)
+            correct = 0
+
+            for i in range(len(testRS)):
+                topn = topN(testRS[i], n)
+                sum_target = int(np.sum(target[i]))
+                TP = 0
+                for i in topn:
+                    if i < sum_target:
+                        TP += 1
+
+                correct += TP
+
+            print('Num of TP:', correct)
+            prec = correct/(len(testRS)*n) #150*n
+            recall = correct/sumtarget
+
+            print('prec:', prec)
+            print('recall:', recall)
+            try:
+                print('F1_score:', F1_score(prec, recall))
+            except ZeroDivisionError:
+                print('ZeroDivisionError')
+                pass
+            print('*****')
+
+        print('\n==============================\n')
+
+        # NDCG
+        num_ndcgs = [10]
+        for num_ndcg in num_ndcgs:
+            print('NDCG@', num_ndcg)
+            print('NDCG score:', NDCG(target, testRS, num_ndcg, all_sort))
+            print('*****')
+
+        print('\n==============================\n')
+
+        # MAP
+        print('MAP:', MAP(target,testRS))
+        print('\n==============================\n')
+        
 if __name__ == '__main__':
     main()
