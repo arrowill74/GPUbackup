@@ -1,0 +1,168 @@
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.26133 (0.02135)
+Test Prec@1=0.18000 (0.03137)
+Test Recall@1=0.18000 (0.03137)
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24606 (0.01951)
+Test Prec@1=0.14000 (0.02833)
+Test Recall@1=0.14000 (0.02833)
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.25696 (0.02011)
+Test Prec@1=0.12667 (0.02716)
+Test Recall@1=0.12667 (0.02716)
+F1@1=0.12667 
+Test Prec@5=0.12933 (0.01149)
+Test Recall@5=0.26922 (0.02424)
+F1@5=0.12933 
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.25696 (0.02011)
+Test Prec@1=0.12667 (0.02716)
+Test Recall@1=0.12667 (0.02716)
+F1@1=0.12667 
+Test Prec@5=0.12933 (0.01149)
+Test Recall@5=0.26922 (0.02424)
+F1@5=0.12933 
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24895 (0.02114)
+Test Prec@1=0.16000 (0.02993)
+Test Recall@1=0.16000 (0.02993)
+F1@1=0.16000 
+Test Prec@5=0.10800 (0.01077)
+Test Recall@5=0.21944 (0.02197)
+F1@5=0.10800 
+MAP=0.20254 
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24998 (0.02136)
+Test Prec@1=0.16667 (0.03043)
+Test Recall@1=0.16667 (0.03043)
+F1@1=0.16667 
+Test Prec@5=0.11067 (0.01076)
+Test Recall@5=0.22333 (0.02188)
+F1@5=0.11067 
+MAP=0.20410 
+
+===New evaluation===
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.2563214898109436
+Test MAP=0.15630592629873435
+Test Prec@1=0.1
+Recall@1=0.042735042735042736
+F1@1=0.05988023952095809
+Test Prec@5=0.08
+Recall@5=0.17094017094017094
+F1@5=0.108991825613079
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.25770384073257446
+Test MAP=0.18863744399532772
+Test Prec@1=0.16
+Recall@1=0.06611570247933884
+F1@1=0.09356725146198831
+Test Prec@5=0.096
+Recall@5=0.19834710743801653
+F1@5=0.1293800539083558
+
+***
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.23693044483661652
+Test MAP=0.17512566537311872
+Test Prec@1=0.14
+Recall@1=0.058333333333333334
+F1@1=0.08235294117647059
+Test Prec@5=0.1
+Recall@5=0.20833333333333334
+F1@5=0.13513513513513514
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.2359030842781067
+Test MAP=0.1575309405218581
+Test Prec@1=0.06
+Recall@1=0.02459016393442623
+F1@1=0.03488372093023256
+Test Prec@5=0.096
+Recall@5=0.19672131147540983
+F1@5=0.12903225806451615
+
+***
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24538101255893707
+Test MAP=0.21289678199552128
+Test Prec@1=0.18
+Recall@1=0.07377049180327869
+F1@1=0.10465116279069767
+Test Prec@5=0.112
+Recall@5=0.22950819672131148
+F1@5=0.15053763440860216
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24538101255893707
+Test MAP=0.19454020227571595
+Test Prec@1=0.14
+Recall@1=0.05982905982905983
+F1@1=0.08383233532934131
+Test Prec@5=0.116
+Recall@5=0.24786324786324787
+F1@5=0.15803814713896458
+
+***
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24948623776435852
+Test MAP=0.23628856569334072
+Test Prec@1=0.2
+Recall@1=0.07874015748031496
+F1@1=0.11299435028248586
+Test Prec@5=0.144
+Recall@5=0.28346456692913385
+F1@5=0.19098143236074272
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.24948623776435852
+Test MAP=0.18701363444174543
+Test Prec@1=0.14
+Recall@1=0.05982905982905983
+F1@1=0.08383233532934131
+Test Prec@5=0.088
+Recall@5=0.18803418803418803
+F1@5=0.11989100817438691
+
+***
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": null, "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 0, "n_epochs_ac_only": 0, "n_epochs_pred_only": 100, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.2550543546676636
+Test MAP=0.21295350708687702
+Test Prec@1=0.2
+Recall@1=0.0847457627118644
+F1@1=0.11904761904761904
+Test Prec@5=0.104
+Recall@5=0.22033898305084745
+F1@5=0.14130434782608695
+
+
+{"version_tag": "", "omit_num_unseen_from_critic": false, "omit_num_seen_from_critic": false, "positive_weights": 2.0, "ac_reg_loss_scaler": 0.0, "actor_reg_loss_scaler": 0.01, "verbose": false, "restore_trained_actor_path": "VAE_ACTOR_TRAIN_ml-20m", "batches_to_anneal_over": 200000, "epochs_to_anneal_over": 50, "max_kl": 0.2, "min_kl": 0.0, "break_early": false, "batch_size": 50, "n_epochs_second_pred": 0, "n_epochs_pred_and_ac": 50, "n_epochs_ac_only": 50, "n_epochs_pred_only": 0, "evaluation_metric": "NDCG", "data_subdir": "ml-20m", "model_class": "multi_vae", "input_dim": 165}
+Test NDCG@10=0.25542786717414856
+Test MAP=0.22885890913644283
+Test Prec@1=0.22
+Recall@1=0.09243697478991597
+F1@1=0.13017751479289943
+Test Prec@5=0.132
+Recall@5=0.2773109243697479
+F1@5=0.17886178861788618
