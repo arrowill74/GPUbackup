@@ -9,6 +9,9 @@ import os
 import heapq
 import math
 import json
+import shutil
+
+DIR = './Data/ours/DMF_data/'
 
 def write_json(data,dst_path):
     with open(dst_path, 'w') as outfile:
@@ -39,7 +42,7 @@ def main():
 class Model:
     def __init__(self, args):
         self.dataName = args.dataName
-        self.dataSet = DataSet(self.dataName)
+        self.dataSet = DataSet(self.dataName, DIR)
         self.shape = self.dataSet.shape
         self.maxRate = self.dataSet.maxRate
 
@@ -241,7 +244,7 @@ class Model:
             hr.append(tmp_hr)
             NDCG.append(tmp_NDCG)
         print('Len usr_scores:', len(usr_scores))
-        write_json(str(usr_scores),'./Data/ours/usr_scores.json')
+        write_json(str(usr_scores), DIR + 'usr_scores.json')
         return np.mean(hr), np.mean(NDCG)
 
     def metrics(self, sess):
@@ -374,4 +377,6 @@ class Model:
         print('\n==============================\n')
         
 if __name__ == '__main__':
+    if os.path.exists('./checkPoint/'):
+        shutil.rmtree('./checkPoint/')
     main()
