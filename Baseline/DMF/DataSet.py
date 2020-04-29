@@ -130,6 +130,10 @@ class DataSet(object):
                 neglist.add(j)
                 tmp_user.append(u)
                 tmp_item.append(j)
+            # print('tmp_user:', tmp_user)
             user.append(tmp_user)
+            # print('tmp_item:', tmp_item)
             item.append(tmp_item)
+        # print('len(user):', len(user))
+        # print('len(item):', len(item))
         return [np.array(user), np.array(item)]
