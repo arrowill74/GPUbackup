@@ -8,7 +8,7 @@ from training import train, test
 if __name__ == '__main__':
 
     BREAK_EARLY = False
-    BATCH_SIZE = 50 #500 #MRM
+    BATCH_SIZE = 50 #500 #MRM=50 # cold=25
 
     for data_subdir in ['ml-20m']: #, 'netflix-prize', 'msd']: #MRM
         actor_path = "VAE_ACTOR_TRAIN_{}".format(data_subdir)
@@ -22,7 +22,7 @@ if __name__ == '__main__':
             ac_reg_loss_scaler=0.0,
             actor_reg_loss_scaler=0.01,
             evaluation_metric="NDCG",
-            logging_frequency=5, #50, #MRM
+            logging_frequency=50,
             batch_size=BATCH_SIZE,
             break_early=BREAK_EARLY,
             verbose=False,
