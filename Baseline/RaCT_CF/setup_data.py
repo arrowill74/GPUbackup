@@ -211,7 +211,7 @@ def load_tr_te_data(csv_file_tr, csv_file_te):
 
 def process_unzipped_data(DATA_DIR,
                           force_overwrite=False,
-                          n_heldout_users=150, #10000, # MRM
+                          n_heldout_users=25, #150, #10000, # MRM
                           discard_ratings_below=3.5,
                           min_users_per_item_to_include=0,
                           min_clicks_per_user_to_include=5):

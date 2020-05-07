@@ -181,11 +181,11 @@ def train(model_class=None,
           n_epochs_second_pred=0,
           batch_size=500,
           break_early=False,
-          batches_to_anneal_over= 100, #200000, #MRM
+          batches_to_anneal_over= 100, #200000, #MRM=100
           min_kl=0.0,
           max_kl=0.2,
-          epochs_to_anneal_over=5, #50, # MRM
-          logging_frequency=5, #25, #MRM
+          epochs_to_anneal_over=50, # MRM=5
+          logging_frequency=25, #MRM=5
           path_to_save_actor=None,
           path_to_save_last_actor=None,
           restore_trained_actor_path=None,

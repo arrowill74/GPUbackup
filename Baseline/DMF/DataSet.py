@@ -10,11 +10,12 @@ def read_json(src_path):
     return data
 
 class DataSet(object):
-    def __init__(self, fileName):
+    def __init__(self, fileName, DIR):
+        self.DIR = DIR
         self.data, self.shape = self.getData(fileName)
         # self.train, self.test = self.getTrainTest()
-        self.train = read_json('./Data/ours/original_split/train.json')
-        self.test = read_json('./Data/ours/original_split/test.json')
+        self.train = read_json(DIR + 'train.json')
+        self.test = read_json(DIR + 'test.json')
         print('train/test:', len(self.train), len(self.test))
         self.trainDict = self.getTrainDict()
 
@@ -24,7 +25,7 @@ class DataSet(object):
             print("Loading ml-1m data set...")
             data = []
             # filePath = './Data/ml-1m/ratings.dat'
-            filePath = './Data/ours/DMF_data.dat'
+            filePath = self.DIR + 'DMF_data.dat'
             u = 0
             i = 0
             maxr = 0.0
@@ -129,6 +130,10 @@ class DataSet(object):
                 neglist.add(j)
                 tmp_user.append(u)
                 tmp_item.append(j)
+            # print('tmp_user:', tmp_user)
             user.append(tmp_user)
+            # print('tmp_item:', tmp_item)
             item.append(tmp_item)
+        # print('len(user):', len(user))
+        # print('len(item):', len(item))
         return [np.array(user), np.array(item)]
