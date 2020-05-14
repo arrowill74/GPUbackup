@@ -184,8 +184,8 @@ def train(model_class=None,
           batches_to_anneal_over= 100, #200000, #MRM=100
           min_kl=0.0,
           max_kl=0.2,
-          epochs_to_anneal_over=50, # MRM=5
-          logging_frequency=25, #MRM=5
+          epochs_to_anneal_over=50,
+          logging_frequency=25,
           path_to_save_actor=None,
           path_to_save_last_actor=None,
           restore_trained_actor_path=None,

@@ -32,9 +32,9 @@ def NDCG_binary_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None, norma
     batch_users = X_pred.shape[0]
     # Get the indexes of the top K predictions.
     '''
-    # for cold movie because items less than 100
-    k = 50 
+    # for cold movie because items less than 100 #MRM
     '''
+    k = 50
     idx_topk_part = bn.argpartition(-X_pred, k, axis=1)
     # Get only the top k predictions.
     topk_part = X_pred[np.arange(batch_users)[:, np.newaxis],
