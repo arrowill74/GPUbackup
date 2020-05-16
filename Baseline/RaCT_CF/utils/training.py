@@ -181,7 +181,7 @@ def train(model_class=None,
           n_epochs_second_pred=0,
           batch_size=500,
           break_early=False,
-          batches_to_anneal_over= 100, #200000, #MRM=100
+          batches_to_anneal_over= 200000, #200000, #MRM=100
           min_kl=0.0,
           max_kl=0.2,
           epochs_to_anneal_over=50,
