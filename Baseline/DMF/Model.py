@@ -267,6 +267,8 @@ class Model:
         return np.mean(hr), np.mean(NDCG)
 
 if __name__ == '__main__':
+    if not os.path.exists('./Result/'):
+        os.mkdir('./Result/')
     if os.path.exists('./checkPoint/'):
         shutil.rmtree('./checkPoint/')
     main()
