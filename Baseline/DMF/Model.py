@@ -12,16 +12,20 @@ import math
 import json
 import shutil
 
-DIR = './Data/ours/DMF_data/'
+class NumpyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return json.JSONEncoder.default(self, obj)
 
 def write_json(data,dst_path):
     with open(dst_path, 'w') as outfile:
-        json.dump(data, outfile)
+        json.dump(data, outfile, cls=NumpyEncoder)
 
 def main():
     parser = argparse.ArgumentParser(description="Options")
 
-    parser.add_argument('-dataName', action='store', dest='dataName', default='ml-1m')
+    parser.add_argument('-dataName', action='store', dest='dataName', default='DMF_data')
     # parser.add_argument('-negNum', action='store', dest='negNum', default=7, type=int)
     parser.add_argument('-userLayer', action='store', dest='userLayer', default=[512, 64])
     parser.add_argument('-itemLayer', action='store', dest='itemLayer', default=[1024, 64])
@@ -30,7 +34,7 @@ def main():
     parser.add_argument('-maxEpochs', action='store', dest='maxEpochs', default=20, type=int)#default=50, type=int)
     parser.add_argument('-batchSize', action='store', dest='batchSize', default=256, type=int)
     parser.add_argument('-earlyStop', action='store', dest='earlyStop', default=5)
-    # parser.add_argument('-checkPoint', action='store', dest='checkPoint', default='./checkPoint/')
+    parser.add_argument('-checkPoint', action='store', dest='checkPoint', default='./checkPoint/')
     parser.add_argument('-topK', action='store', dest='topK', default=10)
 
     args = parser.parse_args()
@@ -43,7 +47,7 @@ def main():
 class Model:
     def __init__(self, args):
         self.dataName = args.dataName
-        self.dataSet = DataSet(self.dataName, DIR)
+        self.dataSet = DataSet(self.dataName)
         self.shape = self.dataSet.shape
         self.maxRate = self.dataSet.maxRate
 
@@ -51,10 +55,7 @@ class Model:
         self.test = self.dataSet.test
 
         # self.negNum = args.negNum
-        # self.testNeg = self.dataSet.getTestNeg(self.test, 99)
-        # 第一個是positive 剩下31個是negtive
-        self.testNeg = self.dataSet.getTestNeg(self.test) # [np.array(user), np.array(item)] (1078, 1078)
-        # print(self.testNeg[0].shape, self.testNeg[1].shape) # (1078, 32) (1078, 32)
+        self.testNeg = self.dataSet.getTestNeg(self.test)
         self.add_embedding_matrix()
 
         self.add_placeholders()
@@ -151,27 +152,28 @@ class Model:
         best_NDCG = -1
         best_epoch = -1
         print("Start Training!")
+        self.maxEpochs = 5 #MRM
         for epoch in range(self.maxEpochs):
             print("="*20+"Epoch ", epoch, "="*20)
             self.run_epoch(self.sess)
-            print('='*50)
-            print("Start Evaluation!")
+            # print('='*50)
+            # print("Start Evaluation!")
             hr, NDCG = self.evaluate(self.sess, self.topK)
-            print("Epoch ", epoch, "HR: {}, NDCG: {}".format(hr, NDCG))
-            if hr > best_hr or NDCG > best_NDCG:
-                best_hr = hr
-                best_NDCG = NDCG
-                best_epoch = epoch
-                self.saver.save(self.sess, self.checkPoint)
-            if epoch - best_epoch > self.earlyStop:
-                print("Normal Early stop!")
-                break
-            print("="*20+"Epoch ", epoch, "End"+"="*20)
+            # print("Epoch ", epoch, "HR: {}, NDCG: {}".format(hr, NDCG))
+            # if hr > best_hr or NDCG > best_NDCG:
+            #     best_hr = hr
+            #     best_NDCG = NDCG
+            #     best_epoch = epoch
+            #     self.saver.save(self.sess, self.checkPoint)
+            # if epoch - best_epoch > self.earlyStop:
+            #     print("Normal Early stop!")
+            #     break
+            # print("="*20+"Epoch ", epoch, "End"+"="*20)
         print("Best hr: {}, NDCG: {}, At Epoch {}".format(best_hr, best_NDCG, best_epoch))
         print("Training complete!")
 
     def run_epoch(self, sess, verbose=10):
-        train_u, train_i, train_r = self.dataSet.getInstances(self.train, self.negNum)
+        train_u, train_i, train_r = self.dataSet.getInstances(self.train)
         train_len = len(train_u)
         shuffled_idx = np.random.permutation(np.arange(train_len))
         train_u = train_u[shuffled_idx]
@@ -223,40 +225,50 @@ class Model:
 
         hr =[]
         NDCG = []
-        testUser = self.testNeg[0] # (1078, 32)
-        testItem = self.testNeg[1] # (1078, 32)
+        testUser = self.testNeg[0] #150
+        testItem = self.testNeg[1] #150
+        # print('testUser:', len(testUser), 'testItem:', len(testItem)) #150 150
 
-        usr_scores = {}
-        testRS = np.zeros((1582, 165)) #shape (1582, 165)
+        test_item = {}
+        test_score = {}
+        test_rank = {}
 
-        for i in range(len(testUser)): # 1078
-            usr_idx = testUser[i][0]
+        for i in range(len(testUser)): 
+            # print('testUser[i]:', len(testUser[i]), testUser[i]) #32 the same
+            # print('testItem[i]:', len(testItem[i]), testItem[i]) #32
+
             target = testItem[i][0] # 取第一個是positive的
+            # print('target:', target)
             feed_dict = self.create_feed_dict(testUser[i], testItem[i])
             predict = sess.run(self.y_, feed_dict=feed_dict)
-            # print('predict:', len(predict)) # len 32
-            usr_scores[str(usr_idx)] = list(predict)
+            # print('predict:', len(predict), predict) #32
+            test_score[str(testUser[i][0])] = predict
+            test_item[str(testUser[i][0])] = [str(sub_item) for sub_item in testItem[i]]
+
             item_score_dict = {}
             for j in range(len(testItem[i])): #32
                 item = testItem[i][j]
                 item_score_dict[item] = predict[j]
-                testRS[usr_idx][item] = predict[j]
 
-            ranklist = heapq.nlargest(topK, item_score_dict, key=item_score_dict.get)
-            # ranklist = heapq.nlargest(32, item_score_dict, key=item_score_dict.get)
+            # ranklist = heapq.nlargest(topK, item_score_dict, key=item_score_dict.get)
+            ranklist = heapq.nlargest(32, item_score_dict, key=item_score_dict.get)
+            # print('predict argsort:', predict.argsort()[::-1])
+            # print('testItem[i]:\n', testItem[i]) #32
+            # print('ranklist:\n', ranklist) #32
+            test_rank[str(testUser[i][0])] = [str(rank) for rank in ranklist]
             tmp_hr = getHitRatio(ranklist, target)
-            # print(target)
             tmp_NDCG = getNDCG(ranklist, target)
             hr.append(tmp_hr)
             NDCG.append(tmp_NDCG)
-        
-        np.save(DIR + 'testRS.npy', testRS)
-        df = pd.DataFrame(testRS)
-        df.to_csv(DIR + 'testRS.csv', index = 0)
-        # write_json(str(usr_scores), DIR + 'usr_scores.json')
+
+        write_json(test_item, './Result/test_item.json')
+        write_json(test_score, './Result/test_score.json')
+        write_json(test_rank, './Result/test_rank.json')
         return np.mean(hr), np.mean(NDCG)
 
 if __name__ == '__main__':
+    if not os.path.exists('./Result/'):
+        os.mkdir('./Result/')
     if os.path.exists('./checkPoint/'):
         shutil.rmtree('./checkPoint/')
     main()

@@ -17,24 +17,26 @@ def MAP(X_pred,heldout_batch):
     Map_value = total_prec/batch_users
     
     return Map_value
-
-def NDCG_binary_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None, normalize=True):
+    
+def NDCG_binary_at_k_batch(X_pred, heldout_batch, k=100, input_batch=None, normalize=True): #MRM
     '''
     normalized discounted cumulative gain@k for binary relevance
     ASSUMPTIONS: all the 0's in heldout_data indicate 0 relevance
 
     If normalize is set to False, then we actually return DCG, not NDCG.
-
-
     '''
     if input_batch is not None:
         X_pred[input_batch.nonzero()] = -np.inf
     batch_users = X_pred.shape[0]
     # Get the indexes of the top K predictions.
     '''
-    # for cold movie because items less than 100
-    k = 50 
+    # for cold movie because items less than 100 #MRM
+    if k == 10:
+        pass
+    else:
+        k = 50
     '''
+
     idx_topk_part = bn.argpartition(-X_pred, k, axis=1)
     # Get only the top k predictions.
     topk_part = X_pred[np.arange(batch_users)[:, np.newaxis],
