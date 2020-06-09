@@ -30,7 +30,7 @@ def main():
     parser.add_argument('-userLayer', action='store', dest='userLayer', default=[512, 64])
     parser.add_argument('-itemLayer', action='store', dest='itemLayer', default=[1024, 64])
     # parser.add_argument('-reg', action='store', dest='reg', default=1e-3)
-    parser.add_argument('-lr', action='store', dest='lr', default=0.0001)
+    parser.add_argument('-lr', action='store', dest='lr', default=0.00000000001)#MRM #default=0.0001)
     parser.add_argument('-maxEpochs', action='store', dest='maxEpochs', default=20, type=int)#default=50, type=int)
     parser.add_argument('-batchSize', action='store', dest='batchSize', default=256, type=int)
     parser.add_argument('-earlyStop', action='store', dest='earlyStop', default=5)
@@ -152,7 +152,7 @@ class Model:
         best_NDCG = -1
         best_epoch = -1
         print("Start Training!")
-        self.maxEpochs = 5 #MRM
+        self.maxEpochs = 6 #MRM
         for epoch in range(self.maxEpochs):
             print("="*20+"Epoch ", epoch, "="*20)
             self.run_epoch(self.sess)
