@@ -29,7 +29,9 @@ Baseline/**/.gitignore
 Baseline/**/LICENSE
 Baseline/**/README.md
 
+Video/**/*.zip
 **/*.h5
+**/*.png
 **/*.jpg
 **/*.jpeg
 **/*.avi
