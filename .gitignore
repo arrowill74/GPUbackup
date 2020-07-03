@@ -29,13 +29,14 @@ Baseline/**/.gitignore
 Baseline/**/LICENSE
 Baseline/**/README.md
 
-Video/**/*.zip
+**/*.zip
 **/*.h5
 **/*.png
 **/*.jpg
 **/*.jpeg
 **/*.avi
 **/*.mp4
+
 
 # jupyter notebook
 **/.ipynb_checkpoints/
