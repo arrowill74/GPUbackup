@@ -656,8 +656,8 @@ def test(
     dcg100_list = []
 
     n10_list = []
-    # r1_list, r5_list = [], []
-    # p1_list, p5_list = [], []
+    r1_list, r5_list = [], []
+    p1_list, p5_list = [], []
 
     with tf.Session() as sess:
         model.saver.restore(sess, '{}/model'.format(chkpt_dir))
@@ -686,21 +686,29 @@ def test(
                 pred_val, batch_of_users, heldout_batch = sess.run(
                     [model.prediction, model.batch_of_users, model.heldout_batch],
                     feed_dict=feed_dict)
+                '''
+                pred_val: (50, 165)
+                batch_of_users: (50, 165)
+                heldout_batch: (50, 165)
+                '''
+                # print('pred_val:', pred_val)
+                # print('batch_of_users:', np.sum(batch_of_users), batch_of_users)
+                # print('heldout_batch:', np.sum(heldout_batch), heldout_batch)
 
                 n10_list.append( #ndcg100_list changed to 10
                     NDCG_binary_at_k_batch(
                         pred_val, heldout_batch, k=10, input_batch=batch_of_users))
-                map_val = MAP(pred_val, heldout_batch)
-                p1 = Prec_at_k_batch(pred_val, heldout_batch, k=1)
-                rec_1 = Recall_at_k_batch(pred_val, heldout_batch, k=1)
-                p5 = Prec_at_k_batch(pred_val, heldout_batch, k=5)
-                rec_5 = Recall_at_k_batch(pred_val, heldout_batch, k=5)
+                # map_val = MAP(pred_val, heldout_batch)
+                # p1 = Prec_at_k_batch(pred_val, heldout_batch, k=1)
+                # rec_1 = Recall_at_k_batch(pred_val, heldout_batch, k=1)
+                # p5 = Prec_at_k_batch(pred_val, heldout_batch, k=5)
+                # rec_5 = Recall_at_k_batch(pred_val, heldout_batch, k=5)
 
-                # p1_list.append(Prec_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
-                # r1_list.append(Recall_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
+                p1_list.append(Prec_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
+                r1_list.append(Recall_at_k_batch(pred_val, heldout_batch, k=1, input_batch=batch_of_users))
                 
-                # p5_list.append(Prec_at_k_batch(pred_val, heldout_batch, k=5, input_batch=batch_of_users))
-                # r5_list.append(Recall_at_k_batch(pred_val, heldout_batch, k=5, input_batch=batch_of_users))
+                p5_list.append(Prec_at_k_batch(pred_val, heldout_batch, k=3, input_batch=batch_of_users))
+                r5_list.append(Recall_at_k_batch(pred_val, heldout_batch, k=3, input_batch=batch_of_users))
 
                 # recall50_list.append( #recall50_list changed to 5
                 #     Recall_at_k_batch(pred_val, heldout_batch, k=5, input_batch=batch_of_users))
@@ -754,8 +762,8 @@ def test(
     # ndcg100_list = np.concatenate(ndcg100_list)
     # ap100_list = np.concatenate(ap100_list)
     # recall100_list = np.concatenate(recall100_list)
-    n10_list = np.concatenate(n10_list)
 
+    n10_list = np.concatenate(n10_list)
     # p1_list = np.concatenate(p1_list)
     # r1_list = np.concatenate(r1_list)
     # p5_list = np.concatenate(p5_list)
@@ -800,14 +808,14 @@ def test(
         f.write(json.dumps(train_args) + "\n")
 
         f.write("Test NDCG@10={}\n".format(np.mean(n10_list)))
-        f.write("Test MAP={}\n".format(map_val))
-        f.write("Test Prec@1={}\n".format(p1))
-        f.write('Recall@1={}\n'.format(rec_1))
-        f.write('F1@1={}\n'.format(F1_score(p1, rec_1)))
+        # f.write("Test MAP={}\n".format(map_val))
+        f.write("Test Prec@1={}\n".format(np.mean(p1_list)))
+        f.write('Recall@1={}\n'.format(np.mean(r1_list)))
+        f.write('F1@1={}\n'.format(F1_score(np.mean(p1_list), np.mean(r1_list))))
         
-        f.write("Test Prec@5={}\n".format(p5))
-        f.write('Recall@5={}\n'.format(rec_5))
-        f.write('F1@5={}\n'.format(F1_score(p5, rec_5)))
+        f.write("Test Prec@5={}\n".format(np.mean(p5_list)))
+        f.write('Recall@5={}\n'.format(np.mean(r5_list)))
+        f.write('F1@5={}\n'.format(F1_score(np.mean(p5_list), np.mean(r5_list))))
 
         '''
         f.write("Test NDCG@10=%.5f (%.5f)\n" % (np.mean(n10_list),
